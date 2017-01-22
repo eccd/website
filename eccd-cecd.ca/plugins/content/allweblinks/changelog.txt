@@ -1,0 +1,66 @@
+rel. 4.0.7
+option added to set "NOFOLLOW"
+
+rel. 4.0.6
+option added to Exclude categories
+
+rel. 4.0.5
+option added to suppress printing  the  link title just the content
+
+rel. 4.0.3
+Removed nl2br from description translation, as its not nessesary anymore
+
+rel. 4.0.3
+Split New links into New and Modified links
+
+rel. 4.0.0
+Complete rewrite of plugin
+many extra options:
+  * Display max number of links per category with read more
+  * Posibility to Display EMPTY categories
+  * Posibility to Display Creation date
+  * Posibility to Display Change date
+  * Posibility to Display Author name
+ Bug fixes: No more HTML in popup 
+
+
+
+rel. 3.0.6
+fixed bug:hits are not counted
+set options that show_hits is disabled when real_url is enabled
+changed lay out so its posible to have different colors for the columns
+added classes for category and link description
+changed CSS so blocks layout is more apealing
+
+rel.3.0.5
+chaged plugin so CSS is only loaded when there is a {all_weblinks} present.
+fixed bug: that put the content 1 line downs (a ? was output)
+Added basic CSS for TABS and SLIDERS, to support templates that did not yet include these.
+All links  or categories you're not authorized for (trashed,reported,unpublished,archived or not enough access rights) are not shown anymore.
+rel.3.0.4
+Changed Plugin config to group config.
+Split show description for Category and Link
+added real_url,show_header and display_description to config
+Amended language files
+rel.3.0.3
+Changed new-link logic so modification is also a NEW-event.
+By saving a link you can emphasise it
+
+rel. 3.0.2
+Fixed error in num_cols logic
+
+Set 
+Display_description =1
+Show_header = 0 
+Num_cols=1 
+for SLIDERS and TABS layout
+
+rel. 3.0.1
+Fixed:
+New Link notification does now work again
+It will now check if an link/category is published or not and what user is logged in (user rights)
+Rel. 3.0.0
+First release for Joomla 1.6 and 1.7 plugin
+Added several layout options
+TABS and SLIDER see screenprints or demosite for samples
+added dutch language, if you've got your language done sent it to me an i'll add it to the new release

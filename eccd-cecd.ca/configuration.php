@@ -1,0 +1,68 @@
+<?php
+class JConfig {
+	public $offline = '0';
+	public $offline_message = 'This site is down for maintenance.<br /> Please check back again soon.';
+	public $display_offline_message = '1';
+	public $offline_image = '';
+	public $sitename = 'ECCD/CECD';
+	public $editor = 'tinymce';
+	public $captcha = '0';
+	public $list_limit = '20';
+	public $access = '1';
+	public $debug = '0';
+	public $debug_lang = '0';
+	public $dbtype = 'mysqli';
+	public $host = 'pdb6.awardspace.net';
+	public $user = '1551395_joomla';
+	public $password = 'i29vXAPQ39v3';
+	public $db = '1551395_joomla';
+	public $dbprefix = 'qijde_';
+	public $live_site = '';
+	public $secret = 'RsIvXFZ35cI6rA4X';
+	public $gzip = '0';
+	public $error_reporting = 'none';
+	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
+	public $ftp_host = '127.0.0.1';
+	public $ftp_port = '21';
+	public $ftp_user = 'administrator';
+	public $ftp_pass = 'i29vXAPQ39v3';
+	public $ftp_root = '';
+	public $ftp_enable = '0';
+	public $offset = 'UTC';
+	public $mailer = 'mail';
+	public $mailfrom = 'mostafa.elhoushi@gmail.com';
+	public $fromname = 'eccd-cecd';
+	public $sendmail = '/usr/sbin/sendmail';
+	public $smtpauth = '0';
+	public $smtpuser = '';
+	public $smtppass = '';
+	public $smtphost = 'localhost';
+	public $smtpsecure = 'none';
+	public $smtpport = '25';
+	public $caching = '0';
+	public $cache_handler = 'file';
+	public $cachetime = '15';
+	public $MetaDesc = 'Egyptian Canadian Coalition of Democracy (ECCD) is a coalition of grassroots groups in different cities in Canada (Montreal, Québec City, Toronto, Ottawa, Kingston, Hamilton, Vancouver, Calgary, etc.)
+
+ECCD is a founding member and a part of a newly formed international network (Egyptians Worldwide for Democracy and Justice -EW4DJ).';
+	public $MetaKeys = 'egypt, canada, coalition, democracy, morsi, sisi, dictatorship, coup, anti-coup, anti coup, military coup, military rule, muslim brotherhood, ikhwan, liberals';
+	public $MetaTitle = '1';
+	public $MetaAuthor = '0';
+	public $MetaVersion = '0';
+	public $robots = '';
+	public $sef = '1';
+	public $sef_rewrite = '1';
+	public $sef_suffix = '1';
+	public $unicodeslugs = '1';
+	public $feed_limit = '10';
+	public $log_path = '/srv/disk9/1551395/www/eccd-cecd.ca/logs';
+	public $tmp_path = '/srv/disk9/1551395/www/eccd-cecd.ca/tmp';
+	public $lifetime = '15';
+	public $session_handler = 'database';
+	public $MetaRights = '';
+	public $sitename_pagetitles = '1';
+	public $force_ssl = '0';
+	public $feed_email = 'author';
+	public $cookie_domain = '';
+	public $cookie_path = '';
+}

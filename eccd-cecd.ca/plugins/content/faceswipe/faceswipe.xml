@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="content" method="upgrade">
+	<name>Plugin Content Faceswipe</name>
+	<author>Trung Nguyen Quang</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>www.JoomAvatar.com</copyright>
+	<license>License GNU General Public License version 2 or later</license>
+	<authorEmail>admin@joomavatar.com</authorEmail>
+	<authorUrl>www.joomavatar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_FACESWIPE_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="faceswipe">faceswipe.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_faceswipe.ini</language>
+	</languages>
+</extension>

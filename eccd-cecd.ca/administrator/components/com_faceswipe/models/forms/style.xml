@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="style_id" type="text" default="0"
+			readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC" />
+
+		<field name="style_name" type="text" label="JGLOBAL_TITLE"
+			description="JFIELD_TITLE_DESC" class="inputbox" size="30"
+			required="true" />
+			
+		<field name="style_height" type="text" label="FACESWIPE_STYLE_HEIGHT"
+			description="FACESWIPE_STYLE_HEIGHT_DESC" class="inputbox" size="30"
+			required="true" default="300px"/>
+			
+		<field name="style_width" type="text" label="FACESWIPE_STYLE_WIDTH"
+			description="FACESWIPE_STYLE_WIDTH_DESC" class="inputbox" size="30"
+			required="true" default="450px" />
+
+		<field name="style_duration" type="text" label="FACESWIPE_STYLE_DURATION"
+			description="FACESWIPE_STYLE_DURATION_DESC" class="inputbox" size="30"
+			default="2000"/>
+				
+		<field
+			name="style_thumbnail"
+			type="radio"
+			label="FACESWIPE_STYLE_THUMBNAIL"
+			description="FACESWIPE_STYLE_THUMBNAIL_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="style_thumbnail_image_height" type="text" label="FACESWIPE_STYLE_THUMBNAIL_IMAGE_HEIGHT"
+			description="FACESWIPE_STYLE_THUMBNAIL_IMAGE_HEIGHT_DESC" class="inputbox" size="30"
+			required="true" default="50px"/>
+			
+		<field name="style_thumbnail_image_width" type="text" label="FACESWIPE_STYLE_THUMBNAIL_IMAGE_WIDTH"
+			description="FACESWIPE_STYLE_THUMBNAIL_IMAGE_WIDTH_DESC" class="inputbox" size="30"
+			required="true" default="50px"/>			
+		
+		<field
+			name="style_caption"
+			type="radio"
+			label="FACESWIPE_STYLE_CAPTION"
+			description="FACESWIPE_STYLE_CAPTION_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="style_random"
+			type="radio"
+			label="FACESWIPE_STYLE_RANDOM"
+			description="FACESWIPE_STYLE_RANDOM_DESC"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="style_paused"
+			type="radio"
+			label="FACESWIPE_STYLE_PAUSED"
+			description="FACESWIPE_STYLE_PAUSED_DESC"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="style_title"
+			type="radio"
+			label="FACESWIPE_STYLE_TITLE"
+			description="FACESWIPE_STYLE_TITLE_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="style_loop"
+			type="radio"
+			label="FACESWIPE_STYLE_LOOP"
+			description="FACESWIPE_STYLE_LOOP_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="style_controller"
+			type="radio"
+			label="FACESWIPE_STYLE_CONTROLLER"
+			description="FACESWIPE_STYLE_CONTROLLER_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="style_zoom" type="text" label="FACESWIPE_STYPE_ZOOM"
+			description="FACESWIPE_STYPE_ZOOM_DESC" class="inputbox" size="30"
+			required="true" default="50"/>
+			
+		<field name="style_pan" type="text" label="FACESWIPE_STYPE_PAN"
+			description="FACESWIPE_STYPE_PAN_DESC" class="inputbox" size="30"
+			required="true" default="25" />
+	</fieldset>
+	<fields
+         addfieldpath="/administrator/components/com_faceswipe/models/fields"
+        >
+       <field
+            name="style_showcase"
+            type="styleshowcase"
+            label="FACESWIPE_STYLE_SHOWCASE"
+            description="FACESWIPE_STYLE_SHOWCASE_DESC"
+       />
+       
+        <field
+            name="style_transition"
+            type="styletransition"
+            label="FACESWIPE_STYLE_TRANSITION"
+            description="FACESWIPE_STYLE_TRANSITION_DESC"
+       />
+    </fields>
+</form>

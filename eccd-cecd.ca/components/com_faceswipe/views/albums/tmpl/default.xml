@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 38 2011-06-11 17:41:32Z trung3388@gmail.com $ -->
+<metadata>
+	<layout title="FACESWIPE_MENU_ALBUM">
+		<message>FACESWIPE_MENU_ALBUM</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_faceswipe/models/fields"
+	>
+		<fieldset name="request">
+			<field
+            	name="album_id"
+                type="album"
+                label="FACESWIPE_MENU_ALBUM"
+            />
+        </fieldset>
+	</fields>
+</metadata>
+

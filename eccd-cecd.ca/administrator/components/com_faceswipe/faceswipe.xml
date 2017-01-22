@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.7" method="upgrade">
+	<name>com_faceswipe</name>
+	<creationDate>July 2011</creationDate>
+	<author>Trung Nguyen Quang</author>
+	<authorEmail>trung3388@joomavatar.com</authorEmail>
+	<authorUrl>http://www.joomavatar.com</authorUrl>
+	<copyright>JoomAvatar.com</copyright>
+	<license>License GNU General Public License version 2 or later</license>
+	<version>1.0.0</version>
+	<description>COM_FACESWIPE_XML_DESCRIPTION</description>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>faceswipe.php</filename>
+		<folder>assets</folder>
+		<folder>views</folder>
+	</files>
+	<administration>
+		<menu img="../administrator/components/com_faceswipe/assets/images/16/faceswipe.png" link="option=com_faceswipe&amp;view=albums">COM_FACESWIPE</menu>
+		<submenu>
+			<menu img="../administrator/components/com_faceswipe/assets/images/16/faceswipe.png" alt="FACESWIPE_ALBUMS" view="albums" link="option=com_faceswipe&amp;view=albums">FACESWIPE_ALBUMS</menu>
+			<menu img="../administrator/components/com_faceswipe/assets/images/16/faceswipe.png" alt="FACESWIPE_STYLES" view="styles" link="option=com_faceswipe&amp;view=styles">FACESWIPE_STYLES</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>faceswipe.php</filename>
+			<folder>assets</folder>
+			<folder>classes</folder>
+			<folder>controllers</folder>
+			<folder>libraries</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_faceswipe.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_faceswipe.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
+

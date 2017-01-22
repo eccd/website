@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="1.6" type="file" client="site" method="upgrade">
+<name>JEvents - Arabic Translation</name>
+<tag>ar-AA</tag>
+<packagename>ar-AA JEvents</packagename>
+<version>3.2.3</version>
+<creationDate>2015.03.17</creationDate>
+<author>Shadi</author>
+<authoremail>
+</authoremail>
+<authorurl>
+</authorurl>
+<copyright>
+</copyright>
+<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+<description>Arabic language para JEvents 2.0</description>
+<fileset>
+<files folder="admin" target="administrator/language/ar-AA">
+	<filename>ar-AA.com_jevents.ini</filename>
+	<filename>ar-AA.com_jevents.menu.ini</filename>
+	<filename>ar-AA.com_jevents.sys.ini</filename>
+	<filename>ar-AA.mod_jevents_latest.ini</filename>
+	<filename>ar-AA.pkg_jevents.sys.ini</filename>
+	<filename>ar-AA.plg_content_jevents.ini</filename>
+	<filename>ar-AA.plg_content_jevents.sys.ini</filename>
+	<filename>ar-AA.plg_finder_jevents.ini</filename>
+	<filename>ar-AA.plg_finder_jevents.sys.ini</filename>
+	<filename>ar-AA.plg_search_eventsearch.ini</filename>
+</files>
+<files folder="site" target="language/ar-AA">
+	<filename>ar-AA.com_jevents.ini</filename>
+	<filename>ar-AA.mod_jevents_cal.ini</filename>
+	<filename>ar-AA.mod_jevents_custom.ini</filename>
+	<filename>ar-AA.mod_jevents_detail.ini</filename>
+	<filename>ar-AA.mod_jevents_latest.ini</filename>
+</files>
+</fileset>
+</extension>

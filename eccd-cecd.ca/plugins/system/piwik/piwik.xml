@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install version="1.6" method="upgrade" type="plugin" group="system">
+	<name>Piwik</name>
+	<author>nfr</author>
+	<creationDate>Januar 2013</creationDate>
+	<copyright>Copyright nfr 2013</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>support@nfrtest.de</authorEmail>
+	<authorUrl>www.nfrtest.de</authorUrl>
+	<version>2.5.1</version>
+	<description>PLG_SYSTEM_PIWIK_DESC</description>
+	<files>
+		<filename plugin="piwik">piwik.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_piwik.ini</language>
+		<language tag="en-GB">en-GB.plg_system_piwik.sys.ini</language>
+		<language tag="de-DE">de-DE.plg_system_piwik.ini</language>
+		<language tag="de-DE">de-DE.plg_system_piwik.sys.ini</language>
+	</languages>
+		
+  <config>
+  	<fields name="params">
+  		<fieldset name="basic">
+	  		<field name="tcode" type="textarea" filter="raw" 
+					description="PLG_SYSTEM_PIWIK_DESC_CODE"
+					label="PLG_SYSTEM_PIWIK_BOX"
+					rows="12" cols="30"
+				/>
+				
+			</fieldset>
+		</fields>
+	</config>
+</install>

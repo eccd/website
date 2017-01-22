@@ -1,0 +1,301 @@
+/* ############################ */
+/* ####### All Weblinks ####### */
+/* ############################ */
+/* Box */
+#allweblinksbox {
+   width: auto;
+   height: 100%;
+   border: none;
+   padding: 0px;
+   display: table;   clear: both;
+}
+/* Wrapper */
+#allweblinksbox .allweblinks {
+   border: 0px;
+   border-bottom: 1px solid #dddddd;
+   padding: 0px;
+   margin: 0px;
+   display: table;
+}
+/* Heading */
+#allweblinksbox h2.cat_title {
+   font-weight: bold;
+   font-size: 14px;
+   margin: 0px;
+   text-align: left;
+   border-bottom:1px solid black;
+}
+/* List */
+#allweblinksbox ul.links {
+   width: 630px;
+   border: 0px;
+   padding: 0px 0px 15px 0px;
+   margin: 0px;
+   background-image: none;
+}
+#allweblinksbox ul.links li {
+   list-style-type: none;
+   display: block;
+   padding-left: 10px;
+   margin: 0px;
+   float: left;
+   background-image: none;
+
+}
+#allweblinksbox .img_link{
+    display: block;
+}
+/* Links */
+#allweblinksbox a.link:link, a.link:visited {
+   text-decoration: none;
+}
+#allweblinksbox a.link:hover, a.link:active {
+   text-decoration: none;
+}
+/* Hits */
+#allweblinksbox span.hits {
+   color: #999999;
+}
+/* New */
+#allweblinksbox span.new {
+   font-size: 10px;
+   color: #ff0000;
+}
+/* Mod */
+#allweblinksbox span.mod {
+   font-size: 10px;
+   color: #00ff00;
+}
+
+/* Linkgroups in columns */
+/* Box */
+#allweblinksbox_col {
+   width: 100%;
+   height: 100%;
+   border: none;
+   padding: 0px;
+   display: table;
+}
+/* Wrapper */
+#allweblinksbox_col .allweblinks_col {
+   display: table;
+   float: left;
+   padding: 0px;
+   border-right: 1px solid #000;
+   background-image: none;
+   margin-right: 10px;
+}
+/* Heading */
+#allweblinksbox_col h2.cat_title_col {
+   font-size: 14px;
+   font-weight: bold;
+   padding-left: 10px;
+   margin-top: 0px;
+}
+/* Links */
+#allweblinksbox_col ul.links_col {
+   height: 100%;
+   padding: 0px;
+   margin: 0px;
+   padding-left: 10px;   
+   overflow: none;
+   list-style-type: none;
+   background-image: none;
+   float: left;
+}
+#allweblinksbox_col ul.links_col li {
+   list-style-type: none;
+   display: block;
+   background-image: none;
+   width: 100%;
+
+}
+/* Hits */
+#allweblinksbox_col span.hits_col {
+   color: #999999;
+}
+/* New */
+#allweblinksbox_col span.new_col {
+   font-size: 10px;
+   color: #ff0000;
+}
+/* Mod */
+#allweblinksbox_col span.mod_col {
+   font-size: 10px;
+   color: #00ff00;
+}
+
+/* Linkgroups in Blocks */
+/* Box */
+#allweblinksbox_blocks {
+   display: table;
+   width: 100%;
+   height: 100%;
+   border: 0px solid #cceaf1;
+   padding: 10px;
+}
+/* Wrapper */
+#allweblinksbox_blocks .allweblinks_blocks {
+   border: 1px solid #ABABAB;
+   margin-top: 10px;
+   margin-right: 10px;
+   float: left;
+
+}
+/* Heading */
+#allweblinksbox_blocks .cat_title_blocks {
+   margin: 0px;
+   padding: 0px;
+   padding-left: 10px;
+}
+/* Links */
+#allweblinksbox_blocks ul.links_blocks {
+   overflow: none;
+   width: 180px;
+   margin-left: 0px;
+   padding :0px;
+   margin-left: 10px;   
+}
+#allweblinksbox_blocks ul.links_blocks li {
+   display: table;
+   list-style-type: none;
+   padding-left: 10 px;
+   margin-left: 0 px;
+   float: left;
+   background-image: none;
+   width: 100%;
+}
+/* Hits */
+#allweblinksbox_blocks span.hits_blocks {
+   color: #999999;
+}
+/* New */
+#allweblinksbox_blocks span.new_blocks {
+   font-size: 10px;
+   color: #ff0000;
+}
+/* New */
+#allweblinksbox_blocks span.mod_blocks {
+   font-size: 10px;
+   color: #00ff00;
+}
+/* v3.0.6 */
+div#allweblinksbox_blocks div.allweblinks_blocks h2.cat_title_blocks{
+	font-family: Trebuchet MS,Arial;
+	color:white;
+	padding: 3px 0 2px 8px;
+	border-bottom: 1px solid #ABABAB;
+	font-size: 1.1em;
+	font-weight: normal;
+
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/sprite2.png");
+    background-origin: padding-box;
+    background-position: 0 -51px;
+    background-repeat: repeat-x;
+    background-size: auto auto;
+	}
+div#allweblinksbox_blocks div.allweblinks_blocks h2.cat_title_blocks.c1{
+	background-color: #DF9F23;
+	}
+div#allweblinksbox_blocks div.allweblinks_blocks h2.cat_title_blocks.c2 {
+	background-color: #D04E4E;
+}
+div#allweblinksbox_blocks div.allweblinks_blocks h2.cat_title_blocks.c3 {
+	background-color: #689352;
+	color:white;
+	}
+div#allweblinksbox_blocks div.allweblinks_blocks h2.cat_title_blocks.c4 {
+	background-color: #497CD1;
+	color:white;
+	}
+
+/* Number of collumns */
+.cols1 {width: 100%;}
+.cols2 {width: 48%;}
+.cols3 {width: 31%;}
+.cols4 {width: 23%;}
+
+/*Tabs */
+dl.tabs {
+    clear: both;
+    float: left;
+    margin: 0;
+    z-index: 50;
+}
+dl.tabs dt {
+    background-attachment: scroll;
+    background-color: #F0F0F0;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+	border-bottom-width:0px;
+    color: #666666;
+    float: left;
+    margin-right: 3px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+}
+dl.tabs dt.open {
+    background-attachment: scroll;
+    background-color: #F9F9F9;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    border-bottom-color: #F9F9F9;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: #000000;
+    z-index: 100;
+}
+div.current {
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    clear: both;
+    padding: 10px;
+	background-color:#FFFFFF;
+}
+div.current dd {
+    margin: 0;
+    padding: 0;
+}
+dl#content-pane.tabs {
+    margin: 1px 0 0 0;
+}
+/* Sliders */
+.panel {
+    border-color: #DDDDDD;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: -1px;
+	background-color:#FFFFFF;
+}
+}#pane.pane-sliders .pane-toggler {
+background-color: gray;
+}#pane.pane-sliders .pane-toggler-down {
+background-color: lightgray;
+}
+
+.desc {
+    margin-left: 20px;
+}
+
+/* 3.0.7*/
+
+.author:before ,.author_col:before,.author_blocks:before{
+    content: "Author:";
+}
+.cdate:before, .cdate_col:before,.cdate_blocks:before {
+    content: "Creation date:";
+}
+.mdate:before, .mdate_col:before,.mdate_blocks:before {
+    content: "Modify Date:";
+}

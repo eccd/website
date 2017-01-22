@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	background: url(bg.png);
+	height: 100%;
+}
+#container{
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#carousel{
+	height: 80%;
+    margin: 0 auto;
+    overflow: scroll;
+    width: 1024px;
+}
+a:link, a:hover:, a:visit{border : none; text-decoration: none;
+}
+
+#top, #bottom{
+	background: none repeat scroll 0 0 #000;
+    display: block;
+  	width: 100%;
+   	color: #fff;
+   	height: 10%;
+}
+#bottom{
+	border-top: 1px solid #ccc;
+}
+#top{
+	border-bottom: 1px solid #ccc;
+}
+#title, #description{
+	text-align: center;
+	line-height: 2;
+    text-align: center;
+}
+#title{
+	font-weight: bold;
+	font-size: 18px;
+}
+#carousel img{
+	border:0px;
+}

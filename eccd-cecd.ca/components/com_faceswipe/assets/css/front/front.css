@@ -1,0 +1,88 @@
+.fs-front-gallery{
+	border: 10px solid #333333;
+    box-shadow: 1px 1px 12px #000000;
+    height: 400px;
+    margin: auto;
+    width: 90%;
+    background: #333;
+    position: relative;
+}
+
+.fs-front-image-block{
+	float: left;
+    height: 198px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 33.33%;
+}
+.fs-front-image-block a img {
+	border: medium none;
+    height: 500px;
+    position: absolute;
+}
+.fs-front-control {
+	bottom: 30px;
+    margin: auto;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    opacity:0.4;
+	filter:alpha(opacity=40);
+	font-weight: bold;
+	border-radius: 5px;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+}
+.fs-front-control a{
+	width: 100%;
+}
+.fs-front-control span {
+	background: none repeat scroll 0 0 #000000;
+    color: #ccc;
+    cursor: pointer;
+   	padding: 2px 5px 5px 5px;
+   	border-radius: 5px;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+}
+.fs-front-control:hover {
+ 	opacity:1;
+	filter:alpha(opacity=99);
+ 	color: #FFF;
+}
+#all .fs-front-gallery a:link,
+#all .fs-front-gallery a:visited 
+#main .fs-front-gallery a:link,
+#main .fs-front-gallery a:visited {
+    border: 0 none;
+    text-decoration: none;
+}
+.fs-social-box {
+	margin: 10px auto auto auto;
+    width: 98%;
+}
+
+div#fs-comment iframe{
+	width: 100%;
+}
+div#fs-comment .fb_iframe_widget{
+	display: block;
+}
+div.fs-social-box .fb_edge_widget_with_comment {
+	margin: 10px 0px 10px 0px;
+}
+.faceswipe-wrapper{
+	/*padding: 0 0 57px 0;*/
+	width: 90%;
+	box-shadow: 0 0 10px #000000;
+}
+div.faceswipe-slideshow {
+	display: block; position: relative; z-index: 0;
+}
+div.faceswipe-slideshow {
+	height: auto; margin: 0 auto;
+}
+div.faceswipe-slideshow a img {
+	border: 0;
+}

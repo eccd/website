@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5.0"
+	client="site"
+	method="upgrade">
+	<name>Aixeena Social</name>
+	<author>Ciro Artigot</author>
+	<creationDate>January 2013</creationDate>
+	<copyright>Copyright (C) 2013 Ciro Artigot Cordero. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>ciro.artigot@gmail.com</authorEmail>
+	<authorUrl>http://aixeena.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Aixeena Social Module</description>
+	<files>
+		<filename module="mod_aixeenasocial">mod_aixeenasocial.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				
+				<field name="target" type="list" default="_blank" label="Link target" description="">
+					<option value="same">Same window</option>
+					<option value="_blank">New window</option>
+				</field>
+				<field name="format" type="list" default="circle" label="Image format" description="">
+					<option value="circle">Circle</option>
+					<option value="square">Square</option>
+					<option value="hex">Hexagon</option>
+				</field>
+				<field name="color" type="list" default="color" label="Image color" description="">
+					<option value="color">Color</option>
+					<option value="black">Black</option>
+					<option value="gray">Gray</option>
+				</field>
+				
+				<field name="size" type="list" default="64" label="Image size" description="">
+					<option value="64">64px x 64px</option>
+					<option value="48">48px x 48px</option>
+					<option value="32">32px x 32px</option>
+				</field>
+				
+				<field type="spacer" name="myspacerimg" hr="true" />
+				
+				<field name="backgroundimg_sw" type="list" default="0" label="Background image" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				
+				<field 
+				  name="backgroundimg"
+				  type="media"
+				  label="Background image"
+				  description=""
+				  class="inputbox"
+				  directory="images/" 
+				/>
+				
+				<field type="spacer" name="myspacer12" hr="true" label="background color" />
+				
+				<field name="backgroundcolor_sw" type="list" default="0" label="Background color" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				
+				<field name="shadow" type="list" default="" label="Icon Sadow" description="">
+					<option value="shadow">Enabled</option>
+					<option value="">Disabled</option>
+				</field>
+				
+				<field name="backgroundcolor"  default="#ffffff"  type="color" description="Pick or write the color, for example #ffffff" label="Background color"/>
+				
+				<field name="padding" type="text" default="" label="Padding" description="" />
+				
+					<field type="spacer" name="myspacer13" hr="true" label="background color" />
+				
+				<field name="backgroundicon_sw" type="list" default="0" label="Icon background color" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				
+				<field name="backgroundicon"  default="#ffffff" type="color" description="Pick or write the color, for example #ffffff"  label="Icon background color"/>
+				
+					<field type="spacer" name="myspacer14" hr="true" label="background color" />
+				
+				
+				<field name="text-align" type="list" default="right" label="Align" description="">
+					<option value="right">Right</option>
+					<option value="left">Left</option>
+					<option value="center">center</option>
+				</field>
+				<field name="hover" type="list" default="rotate" label="Hover effect" description="">
+					<option value="rotate">Rotate</option>
+					<option value="opacity">Opacity</option>
+					<option value="none">None</option>
+				</field>
+				
+				
+				<field type="spacer" name="myspacer" hr="true" />
+	
+				<field name="twitter" type="list" default="0" label="Twitter button" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="twitter_url" type="text" default="" label="Twitter URL" description="" />
+				<field name="twitter_text" type="text" default="" label="Twitter ALT text" description="" />
+				<field name="twitter_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacer2" hr="true" />
+				
+				<field name="facebook" type="list" default="0" label="Facebook button" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="facebook_url" type="text" default="" label="Facebook URL" description="" />
+				<field name="facebook_text" type="text" default="" label="Facebook ALT text" description="" />
+				<field name="facebook_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacer3" hr="true" />
+				
+				
+				<field name="googleplus" type="list" default="0" label="Google Plus button" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="googleplus_url" type="text" default="" label="Google Plus URL" description="" />
+				<field name="googleplus_text" type="text" default="" label="Google Plus ALT text" description="" />
+				<field name="googleplus_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacer4" hr="true" />
+				
+				<field name="linkedin" type="list" default="0" label="Linked in button" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="linkedin_url" type="text" default="" label="Linked in URL" description="" />
+				<field name="linkedin_text" type="text" default="" label="Linked in ALT text" description="" />
+				<field name="linkedin_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacer5" hr="true" />
+				
+				<field name="youtube" type="list" default="0" label="Youtube button" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="youtube_url" type="text" default="" label="Youtube URL" description="" />
+				<field name="youtube_text" type="text" default="" label="Youtube ALT text" description="" />
+				<field name="youtube_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacer6" hr="true" />
+				
+				<field name="vimeo" type="list" default="0" label="Vimeo button" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="vimeo_url" type="text" default="" label="Vimeo URL" description="" />
+				<field name="vimeo_text" type="text" default="" label="Vimeo ALT text" description="" />
+				<field name="vimeo_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacer7" hr="true" />
+				
+				<field name="flickr" type="list" default="0" label="Flickr button" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="flickr_url" type="text" default="" label="Flickr URL" description="" />
+				<field name="flickr_text" type="text" default="" label="Flickr ALT text" description="" />
+				<field name="flickr_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacer8" hr="true" />
+				
+				<field name="instagram" type="list" default="0" label="Instagram button" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="instagram_url" type="text" default="" label="Instagram URL" description="" />
+				<field name="instagram_text" type="text" default="" label="Instagram ALT text" description="" />
+				<field name="instagram_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacer9" hr="true" />
+				
+				<field name="tumbrl" type="list" default="0" label="Tumbrl button" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="tumbrl_url" type="text" default="" label="Tumbrl URL" description="" />
+				<field name="tumbrl_text" type="text" default="" label="Tumbrl ALT text" description="" />
+				<field name="tumbrl_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacera" hr="true" />
+				
+				<field name="wordpress" type="list" default="0" label="Wordpress blog button" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="wordpress_url" type="text" default="" label="Wordpress blog URL" description="" />
+				<field name="wordpress_text" type="text" default="" label="Wordpress blog ALT text" description="" />
+				<field name="wordpress_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacers" hr="true" />
+				
+				<field name="github" type="list" default="0" label="Github button" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="github_url" type="text" default="" label="Github URL" description="" />
+				<field name="github_text" type="text" default="" label="Github ALT text" description="" />
+				<field name="github_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacerd" hr="true" />
+				
+				<field name="rss" type="list" default="0" label="RSS button" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="rss_url" type="text" default="" label="RSS URL" description="" />
+				<field name="rss_text" type="text" default="" label="RSS ALT text" description="" />
+				<field name="rss_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacerf" hr="true" />
+				
+				<field name="custom1" type="list" default="0" label="Custom button 1" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				
+				<field type="spacer" name="myspacerg" hr="true" />
+				
+				<field 
+				  name="custom1_src"
+				  type="media"
+				  label="Custom image button 1"
+				  description=""
+				  class="inputbox"
+				  directory="images/" 
+				/>
+				
+				<field name="custom1_url" type="text" default="" label="Custom button 1 URL" description="" />
+				<field name="custom1_text" type="text" default="" label="Custom button 1 ALT text" description="" />
+				<field name="custom1_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacerh" hr="true" />
+				
+				<field name="custom2" type="list" default="0" label="Custom button 2" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field 
+				  name="custom2_src"
+				  type="media"
+				  label="Custom image button 2"
+				  description=""
+				  class="inputbox"
+				  directory="images/" 
+				/>
+				<field name="custom2_url" type="text" default="" label="Custom button 2 URL" description="" />
+				<field name="custom2_text" type="text" default="" label="Custom button 2 ALT text" description="" />
+				<field name="custom2_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacerj" hr="true" />
+				
+				<field name="custom3" type="list" default="0" label="Custom button 3" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field 
+				  name="custom3_src"
+				  type="media"
+				  label="Custom image button 3"
+				  description=""
+				  class="inputbox"
+				  directory="images/" 
+				/>
+				<field name="custom3_url" type="text" default="" label="Custom button 3 URL" description="" />
+				<field name="custom3_text" type="text" default="" label="Custom button 3 ALT text" description="" />
+				<field name="custom3_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacerk" hr="true" />
+				
+				<field name="custom4" type="list" default="0" label="Custom button 4" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field 
+				  name="custom4_src"
+				  type="media"
+				  label="Custom image button 4"
+				  description=""
+				  class="inputbox"
+				  directory="images/" 
+				/>
+				<field name="custom4_url" type="text" default="" label="Custom button 4 URL" description="" />
+				<field name="custom4_text" type="text" default="" label="Custom button 4 ALT text" description="" />
+				<field name="custom4_sufix" type="text" default="" label="Image class sufix" description="" />											
+				
+				<field type="spacer" name="myspacerl" hr="true" />
+				
+				<field name="custom5" type="list" default="0" label="Custom button 5" description="">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field 
+				  name="custom5_src"
+				  type="media"
+				  label="Custom image button 5"
+				  description=""
+				  class="inputbox"
+				  directory="images/" 
+				/>
+				<field name="custom5_url" type="text" default="" label="Custom button 5 URL" description="" />
+				<field name="custom5_text" type="text" default="" label="Custom button 5 ALT text" description="" />	
+				<field name="custom5_sufix" type="text" default="" label="Image class sufix" description="" />
+				
+				<field type="spacer" name="myspacerp" hr="true" />
+				
+				<field name="ordering_icons" type="textarea" class="span6" default="twitter, facebook, googleplus, linkedin, youtube, vimeo, flickr, instagram, tumbrl, wordpress, github, rss, custom1, custom2, custom3, custom4, custom5 " label="Button order" rows="10" cols="40" description="Order the buttons by this codes: twitter, facebook, googleplus, linkedin, youtube, vimeo, flickr, instagram, tumbrl, wordpress, github, rss, custom1, custom2, custom3, custom4, custom5. Icon order separated by coma, warning: the icon tag must be in the order string, if not the icon n will not appear. " />		
+				
+			</fieldset>
+							
+<fieldset name="advanced">
+	
+	<field
+	name="layout"
+	type="modulelayout"
+	label="JFIELD_ALT_LAYOUT_LABEL"
+	description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+	<field
+	name="moduleclass_sfx"
+	type="text"
+	label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+	description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+	<field
+	name="cache"
+	type="list"
+	default="1"
+	label="COM_MODULES_FIELD_CACHING_LABEL"
+	description="COM_MODULES_FIELD_CACHING_DESC">
+	<option
+	value="1">JGLOBAL_USE_GLOBAL</option>
+	<option
+	value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+	</field>
+	<field
+	name="cache_time"
+	type="text"
+	default="900"
+	label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+	description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+	<field
+	name="cachemode"
+	type="hidden"
+	default="static">
+	<option
+	value="static"></option>
+	</field>
+</fieldset>
+
+		</fields>
+	</config>
+</extension>	

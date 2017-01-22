@@ -1,0 +1,177 @@
+.clearbreak{
+	clear:both;
+}
+.icon-48-albums {
+    background-image: url("../images/48/faceswipe.png");
+}
+#fs-facebook-wrapper{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+}
+.fs-header{
+	background: #3B5998;
+    border-bottom: medium none;
+    border-top: 1px solid #E2E2E2;
+    padding: 4px 5px 5px;
+    color: white;
+}
+
+#fs-facebook-photos,
+#fs-facebook-albums,
+#fs-facebook-slides{
+	float: left;
+}
+#fs-facebook-albums{
+	width: 13%
+}
+.fs-facebook-albums{
+	line-height: 1.5;
+    list-style: none outside none;
+    padding: 5px;
+    width: 100%;
+}
+.fs-facebook-albums li {
+    cursor: pointer;
+    padding: 5px;
+}
+.fs-facebook-albums li:hover {
+    background-color: #D8DFEA;
+}
+#fs-facebook-photos{
+	width: 54%;
+	background-color: #D8DFEA;
+}
+#album_photos{
+	height: 100%;
+	padding: 5px;
+}
+#fs-facebook-slides{
+	width: 32%;
+	min-height: 300px; 
+	border: 1px solid black;
+}
+.fs-facebook-photo-block{
+ 	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    outline: medium none;
+    padding: 4px;
+    position: relative;
+    vertical-align: bottom;
+    margin:0px 10px 10px 0px;
+    float: left;
+}
+#fs-facebook-photos .fs-facebook-photo-block > span:hover{
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+}
+#fs-facebook-slides .fs-facebook-photo-block > span:hover{
+	background-image: url(../images/delete.png)!important;
+	background-position: center center;
+}
+.fs-facebook-photo-thumb{
+	background-color: #EEEEEE;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 120px;
+    width: 161px;
+    float: left;
+    cursor: pointer;
+}
+.fs-facebook-photo-details{
+	display: none;
+}
+.fs-facebook-photo-details ul.photo-thumbs,
+.fs-facebook-photo-details div.photo-details{
+	float:left;
+}
+.fs-facebook-photo-details ul.photo-thumbs{
+	list-style: none;
+	padding: 0px;
+	margin: 5px;
+	width: 20%;
+}
+.fs-facebook-photo-details div.photo-details{
+	width: 70%;
+}
+.fs-facebook-layout-detail .gallery .fs-facebook-photo-block{
+	width: 96%;
+	margin: 5px;
+}
+.gallery .fs-facebook-photo-details{
+	display: block;
+	float: left;
+	width: 71%	
+}
+.fs-facebook-layout-thumb .gallery .fs-facebook-photo-details{
+	display: none;
+}
+.fs-facebook-layout-thumb .gallery .fs-facebook-photo-block {
+    margin: 10px;
+    width: ;
+}
+.fs-facebook-layout-detail #fs-facebook-control li.detail,
+.fs-facebook-layout-thumb #fs-facebook-control li.thumb{
+	background: #555;
+	color: #fff;
+}
+#fs-facebook-load-album,
+#fs-facebook-control{
+	list-style: none outside none;
+    margin: 5px;
+    padding: 0;
+}
+.fs-loading,
+.fs-facebook-button, 
+#fs-facebook-load-album li,
+#fs-facebook-control li{
+	border: 1px solid;
+    float: right;
+    margin-right: 5px;
+    padding: 5px;
+    
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #EEEEEE;
+    border-color: #999999 #999999 #888888;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: normal !important;
+    padding: 2px 6px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.fs-facebook-albums li.fs-facebook-album-active{
+	background: #627aad;
+	color: #fff;
+	padding: 10px 5px 10px 10px;
+}
+#fs-facebook-load-photos-button li{
+	display: none;
+}
+#fs-facebook-load-album #fs-album-loading{
+	display: none;
+}
+#fs-facebook-albums-list > h1 {
+	background: #EEE;
+	cursor: pointer;
+	margin: 5px 0;
+	padding: 10px;
+	font-size: 14px;
+}
+.fs-loading img{
+	height: 10px;
+    width: 20px;
+}

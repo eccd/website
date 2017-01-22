@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="album_id" type="text" default="0"
+			readonly="true" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC" />
+
+		<field name="album_name" type="text" label="JGLOBAL_TITLE"
+			description="JFIELD_TITLE_DESC" class="inputbox" size="30"
+			required="true" />
+			
+		<field name="published" type="list"
+			label="JSTATUS" description="JFIELD_PUBLISHED_DESC"
+			class="inputbox" size="1" default="1"
+		>
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>
+			<option value="2">
+				JARCHIVED</option>
+			<option value="-2">
+				JTRASHED</option>
+		</field>
+		
+		<field name="ordering" type="ordering" class="inputbox"
+			label="JFIELD_ORDERING_LABEL" description="JFIELD_ORDERING_DESC" />
+
+		<field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC" class="inputbox" size="1" />
+
+		<field name="xreference" type="text"
+			label="JFIELD_XREFERENCE_LABEL" description="JFIELD_XREFERENCE_DESC"
+			class="inputbox" size="20" />
+			
+		<field
+			name="album_comment"
+			type="radio"
+			label="FACESWIPE_ALBUM_EDIT_COMMENT"
+			description="FACESWIPE_ALBUM_EDIT_COMMENT_DS"
+			default="0"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="album_fullscreen_layout" type="list"
+			label="FACESWIPE_ALBUM_FULLSCREEN_LAYOUT" description="FACESWIPE_ALBUM_FULLSCREEN_LAYOUT_DESC"
+			class="inputbox" default="swipe"
+		>
+			<option value="swipe">
+				FACESWIPE_ALBUM_PHOTOSWIPE</option>
+			<option value="carousel">
+				FACESWIPE_ALBUM_CAROUSEL</option>
+			<option value="supersized">
+				FACESWIPE_ALBUM_SUPERSIZED</option>
+		</field>	
+	</fieldset>
+	
+	<fields
+         addfieldpath="/administrator/components/com_faceswipe/models/fields"
+        >
+        <fieldset name="style">
+                <field
+                     name="style_id"
+                     type="style"
+                     label="FACESWIPE_ALBUM_STYLE"
+                     description="FACESWIPE_ALBUM_STYLE_DESC"
+                />
+        </fieldset>
+    </fields>
+</form>

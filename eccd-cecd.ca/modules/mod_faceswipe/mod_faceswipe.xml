@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.0.0"
+	client="site"
+	method="upgrade">
+	<name>FaceSwipe Module</name>
+	<author>Trung Nguyen Quang</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>JoomAvatar.com</copyright>
+	<license>License GNU General Public License version 2 or later</license>
+	<authorEmail>admin@joomavatar.com</authorEmail>
+	<authorUrl>www.joomavatar.com</authorUrl>
+	<version>1.0.0</version>
+	<description>MODULE_FACESWIPE_XML_DES</description>
+	<files>
+		<filename module="mod_faceswipe">mod_faceswipe.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_faceswipe.ini</language>
+		<language tag="en-GB">en-GB.mod_faceswipe.sys.ini</language>
+	</languages>
+	<config>
+		<fields 
+			name="params"
+			addfieldpath="/administrator/components/com_faceswipe/models/fields"
+			>
+			<fieldset name="basic">
+				<field
+                       name="album_id"
+                       type="album"
+                       label="FACESWIPE_MODULE_ALBUM_LABEL"
+                       description="FACESWIPE_MODULE_ALBUM_LABEL_DS"
+                />
+            </fieldset>
+		</fields>
+	</config>
+</extension>
